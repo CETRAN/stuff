@@ -44,7 +44,7 @@ void type(void)
     /*Formula*/
     float sqt = (a + b + c) / 2.0;
     int area = sqt * ((sqt - a) * (sqt - b) * (sqt - c));
-    
+    /*To see which condition is it checking, see printf inside*/
     if ((a == b) && (a == c) && (b == a) && (b == c) && (c == a) && (c == b))
       {
 	printf("This is an Equilateral Triangle.\n");
