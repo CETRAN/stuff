@@ -28,7 +28,7 @@ void type(void)
   int a, b, c; char INPUT;
   do {
     printf("Please enter values: \n");
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%d %d %d%*c", &a, &b, &c);
     
     /*Checking if positive*/
     if(a<=0) { printf ("Error! Value is negative!\n"); break; }
@@ -63,7 +63,7 @@ void type(void)
     
     while(1){
       printf ("Would you like to enter another triangle? [Y//n]: ");
-      scanf (" %c", &INPUT);
+      scanf ("%c", &INPUT);
       
       if (INPUT == 'y' || INPUT == 'Y')
 	break;
