@@ -3,7 +3,6 @@ Zepeda, Bryant
 Lab# 1B
 Due Date: 2015-02-24
 Description:
-
 Input 3 positive integers from the terminal, determine if they are valid
 sides of a triangle. If the sides do from a valid triangle, output the type
 of triangle - equilateral, isosceles, or scalene - and the area of the
@@ -11,7 +10,6 @@ triangle. If the three integers are not the valid sides of a triangle,
 output an appropriate message and the 3 sides. Be sure to comment and error
 check in your program.
 */
-
 #include <stdio.h>
 #include <math.h> /* For GCC, use 'gcc <name>.c -lm' */
 #define _CRT_SECURE_NO_WARNINGS
@@ -31,19 +29,19 @@ void type(void)
     scanf("%d %d %d%*c", &a, &b, &c);
     
     /*Checking if positive*/
-    if(a<=0) { printf ("Error! Value is negative!\n"); break; }
-    if(b<=0) { printf ("Error! Value is negative!\n"); break; }
-    if(c<=0) { printf ("Error! Value is negative!\n"); break; }
+    if(a<=0) {printf ("Error! Value is negative!\n"); break;}
+    if(b<=0) {printf ("Error! Value is negative!\n"); break;}
+    if(c<=0) {printf ("Error! Value is negative!\n"); break;}
 
     /*Checking if valid triangle*/
-    
-    if (!(a + b > c)) {printf ("Error! Invalid triangle input!\n");break;}
-    if (!(a + c > b)) {printf ("Error! Invalid triangle input!\n");break;}
-    if (!(b + c > a)) {printf ("Error! Invalid triangle input!\n");break;}
+    if (!(a + b > c)) {printf ("Error! Invalid triangle input!\na = %d, b = %d, c = %d\n"); break;}
+    if (!(a + c > b)) {printf ("Error! Invalid triangle input!\na = %d, b = %d, c = %d\n"); break;}
+    if (!(b + c > a)) {printf ("Error! Invalid triangle input!\na = %d, b = %d, c = %d\n"); break;}
     
     /*Formula*/
     float sqt = (a + b + c) / 2.0;
     int area = sqt * ((sqt - a) * (sqt - b) * (sqt - c));
+    
     /*To see which condition is it checking, see printf inside*/
     if ((a == b) && (a == c) && (b == a) && (b == c) && (c == a) && (c == b))
       {
