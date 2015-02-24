@@ -48,13 +48,13 @@ void type(void)
     if ((a == b) && (a == c) && (b == a) && (b == c) && (c == a) && (c == b))
       {
 	printf("This is an Equilateral Triangle.\n");
-	printf("Area: %f\n", sqrt(area));
+	printf("Area: %6.2f\n", sqrt(area));
       }
     else if ((a == b && b == a) || (a == c && c == a)
 	     || (b == c && c == b))
       {
 	printf("This is an Isosceles Triangle.\n");
-	printf("Area: %f\n", sqrt(area));
+	printf("Area: %6.2f\n", sqrt(area));
       }
     else {
       printf("This is a Scalene Triangle.\n");
