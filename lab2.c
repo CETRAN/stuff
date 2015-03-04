@@ -2,26 +2,24 @@
 #define _CRT_SECURE_NO_WARNINGS
 int main(void)
 {
-	char io;
-	int word = -1, punc = 0; /*the variable 'word' is -1 to offset the end of the character*/
+	char io; 
+	int word = 1, punc = 0;
 
 	while ((io = getchar()) != EOF)
 	{
 		if (io >= 97 && io <= 122)
-		{
 			io = (io - 32);
-			word++;
-		}
-		if (io >= 65 && io <= 90); /*A precursor for else statement and not changing capitalized characters*/
-		else
+		if (io == 32)
 		{
-			io = ' ';
-			punc++;
+			word++;
 			putchar('\n');
 		}
-			
-		putchar(io);
+		if (io >= 33 && io <= 64)
+			io = ' ';
+		putchar(io);	
 	}
 	printf("There are %d words and %d punctuation marks.\n", word, punc);
+
+	system("pause");
 	return 0;
 }
