@@ -9,6 +9,7 @@ int main(void)
 		if (reset == 0 && (io >= 'a' && io <= 'z')) {
 			io = (io - 32);
 			reset = 1;
+			word++;
 		}
 		if (!(io >= 'a' && io <= 'z') && !(io >= 'A' && io <= 'Z')) {
 			io = '\n';
@@ -17,5 +18,6 @@ int main(void)
 		}
 		putchar(io);
 	}
+	printf("There are %d words and %d punctuation marks.\n", word, punc);
 	return 0;
 }
