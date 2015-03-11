@@ -1,3 +1,7 @@
+/* Zepeda, Bryant
+   Lab# 2
+   Due Date: 3/10/2015
+   Description: Exercise to improve character handling */
 #include <stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
 int main(void)
