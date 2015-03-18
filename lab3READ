@@ -1,0 +1,26 @@
+Objective : To again experience in the use of repetition, character processing and robust input in a modular program.
+
+Problem Definition:
+  Write a C program to perform simple C arithmetic calculations. The user is to enter a simple expression
+  (integer operator integer) such as: 15 + 30
+  
+  The Program is to extract the 2 operands and the operator , perform the indicated calculation and display the result.
+  For example, 15 + 30 = 45.
+  
+  Operators should include +, -, *, /, and %.
+  Operands are positive integers, no sign.
+  Use getchar to input the expression
+  Allow for variable spacing before the first operand and between operators and operands. (Zero, one, or more spaces).
+  
+  Aloow the user the option of entering another expression.
+  Code a function for each operator to do the appropriate arithmetic operation (5 functions).
+  No global variables. No string handing functions.
+  No arrays.
+  
+  YOU MAY NOT USE ANY STRING HANDLING FUNCTIONS IN THIS PROGRAM
+  You may only use input and output functions such as getchar and putchar.
+  
+  Output:
+    Echo the input (both user prompts and user entered data).
+    Print the whole expression with the result or an appropriate error message.
+    Be sure your output data shows all valid and invalid test data and how your program handled it.
